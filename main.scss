@@ -1,0 +1,35 @@
+body{
+	align-content: center;
+	background: lightblue;
+	margin: 0;
+}
+.search-bar{
+	margin: 2em 2em;
+	background: white;
+	border-radius: 5em;
+	border: solid black;
+	border-width: 2px;
+	height: 2em;
+	width: 25em; 
+	padding: .5em 2em .5em 4em;
+
+}
+
+.search-input{
+	border: none;
+	width: 21em;
+}
+
+.search-input:focus{
+
+	outline: none !important;
+	border: 1px solid blue;
+	border-radius: 5em;
+}
+
+
+.glasses{
+	width: 8%;
+	height: 8%;
+
+}
