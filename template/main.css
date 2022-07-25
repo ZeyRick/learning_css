@@ -1,0 +1,65 @@
+body {
+  align-content: center;
+  background: lightblue;
+  margin: 0; }
+
+.search-bar {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0em;
+  background: white;
+  border-radius: 5em;
+  border: solid black;
+  border-width: 2px;
+  height: 3em;
+  width: 25em;
+  padding: .5em 0 .5em 4em;
+  position: relative; }
+
+.search-input {
+  background-color: transparent;
+  border: none;
+  font-size: 1em;
+  width: 21.8em;
+  height: 2.8em;
+  margin-top: -.5em;
+  border-radius: 5em;
+  margin-left: -1em;
+  position: absolute; }
+
+.search-input:focus {
+  font-size: 1em;
+  outline: none !important;
+  width: 21.5em;
+  height: 4em;
+  margin-top: -1.1em;
+  position: absolute;
+  background-color: transparent; }
+
+.glasses {
+  clear: both;
+  width: 50%;
+  height: 50%;
+  display: block;
+  float: left;
+  margin-left: -8.5em;
+  margin-top: .2em;
+  position: absolute; }
+
+.content {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10em; }
+
+.content-list {
+  list-style: none;
+  margin-left: -2; }
+
+.contents {
+  border: solid 1px black;
+  margin-top: .5em; }
+
+/*# sourceMappingURL=main.css.map */
