@@ -4,17 +4,18 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<title>The 2022 Front End</title>
 </head>
 <body>
 	<div class="navbar">
 		<div class="container">
-			<a href="homepage.html">Lo<span>go</span></a>
+			<a class="logo" href="homepage.html">Lo<span>go</span></a>
 			<img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Nav">
 
 			<nav>
 				<img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="exit">
-				<ul class="first_nav">
+				<ul class="primary-nav">
 					<li class="current"><a href="#">Home</a></li>
 					<li><a href="#">Feature</a></li>
 					<li><a href="#">Pricing</a></li>
@@ -25,26 +26,90 @@
 					<li class="go-premium"><a href="#">Go Premium</a></li>
 				</ul>
 			</nav>
-		</div>
+		</div>	
+	</div>
 
-
-		<section class="hero">
+	<section class="hero">
 			<div class="container">
 				<div class="left-col">
 					<p class="subhead">It's Nitty &amp; Gritty </p>
 					<h1 class="headline"> A Task App That Doesn't Stink</h1>
-
 					<div class="hero-cta">
 						<a href="#" class="primary-cta">Try For Free</a>
 						<a href="#" class="watch-video-cta"><img src="images/watch.svg" alt="watch video">Watch A Video</a>
 					</div>
 				</div>
-
 				<img src="images/illustration.svg" class="hero-img" alt="Illustration">
 			</div>			
 		</section>
-	</div>
+		<section class="features-section">
+			<div class="container">
+				<ul class="features-list">
+					<li>Unlimited Tasks</li>
+					<li>SMS Task Reminders</li>
+					<li>Confetti Explosions upon Task Completions</li>
+					<li>Social Media Accouncements</li>
+					<li>Real Time Collaboration</li>
+					<li>Other awesome features</li>
+				</ul>
+				<img src="images/holding-phone.jpg" alt="Man holding phone">
+			</div>
+		</section>
+		<section class="testimonials-section">
+			<div class="container">
+				<ul>
+					<li>
+						<img src="images/person.jpg" alt="Person">
+						<blockquote>Dolore aliquip ut qui occaecat et dolore cupidatat anim do officia culpa proident reprehenderit consectetur nostrud exercitation.</blockquote>
+					</li>
+					<li>
+						<img src="images/person.jpg" alt="Person">
+						<blockquote>Dolore aliquip ut qui occaecat et dolore cupidatat anim do officia culpa proident reprehenderit consectetur nostrud exercitation.</blockquote>
+					</li>
+					<li>
+						<img src="images/person.jpg" alt="Person">
+						<blockquote>Dolore aliquip ut qui occaecat et dolore cupidatat anim do officia culpa proident reprehenderit consectetur nostrud exercitation.</blockquote>
+					</li>
+				</ul>
+			</div>
+		</section>
 
+		<section class="contact-section">
+			
+			<div class="container">
+				<div class="contact-left">
+					<h2>Contact</h2>
+					<form>
+						<label for="name">Name</label>
+						<input type="text" name="name" id="name">
+
+						<label for="message">Message</label>
+						<textarea name="message" id="message" cols="30" rows="10" placeholder="your message"></textarea>
+
+						<input type="submit" name="" class="send-message-cta" value="Send message">
+					</form>
+				</div>
+
+				<div class="contact-right">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d18065.097305659572!2d104.90971052502377!3d11.551819770720519!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3109511c4db1dc35%3A0xf6aba2da3e62a36b!2sVanda%20Institute!5e0!3m2!1sen!2skh!4v1658629616462!5m2!1sen!2skh" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					
+				</div>
+			</div>
+		</section>
+
+
+		<script>
+			const mobileBtn = document.getElementById('mobile-cta')
+				nav = document.querySelector('nav')
+				mobileBtnExit = document.getElementById('mobile-exit');
+
+			mobileBtn.addEventListener('click',()=>{
+				nav.ClassList.add('menu-btn');
+			})
+
+			mobileBtnExit.addEventListener('click',()=>{
+				nav.ClassList.remove('menu-btn');
+			})</script>
 
 
 
